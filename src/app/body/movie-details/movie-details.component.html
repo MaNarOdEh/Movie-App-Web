@@ -1,1 +1,32 @@
-<p>movie-details works!</p>
+<div class="details"> 
+
+<div class="left">
+    <img  mat-card-image src="https://image.tmdb.org/t/p/w300//{{movie['poster_path']}}" 
+        onerror="this.src='https://image.tmdb.org/t/p/w300///20djTLqppfBx5WYA67Y300S6aPD.jpg'"
+        alt="https://image.tmdb.org/t/p/w300///20djTLqppfBx5WYA67Y300S6aPD.jpg">
+
+</div>
+<div class="right">
+    <mat-card-header>
+        <mat-card-title>{{movie['title']}}</mat-card-title>
+        <mat-card-subtitle>{{movie['original_title']}}</mat-card-subtitle>
+    </mat-card-header>
+    <p>{{movie['overview']}}</p>
+    <p><span>Release Date : </span>{{movie['release_date']}}</p>
+    <p>Rating : {{movie['popularity']}}</p>
+    <button>Add to Faviroute</button>
+</div>
+
+</div>
+<!--<p>film-details-component works!</p>
+<p>{{movie['id']}}</p>
+<p> {{movie['homepage']}}</p>
+<p>Adult : {{movie['adult']}}</p>
+<p>Overview : {{movie['overview']}}</p>
+<p>Popularity: {{movie['popularity']}}</p>
+<p>{{movie['release_date']}}</p>
+<p>{{movie['video']}}</p>
+<p>{{movie['vote_count']}}</p>
+<p>{{movie['backdrop_path']}}</p>-->
+
+

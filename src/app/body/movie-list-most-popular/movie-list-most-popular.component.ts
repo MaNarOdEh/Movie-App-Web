@@ -24,6 +24,8 @@ export class MovieListComponent implements OnInit {
   }
   naviagteToDetails(movie){
     console.log(movie);
+    this.myrouter.navigate(['/details',movie.id]);
+
   }
 
 }

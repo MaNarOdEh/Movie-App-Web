@@ -1,3 +1,4 @@
+import { MovieDetailsComponent } from './body/movie-details/movie-details.component';
 import { MovieListTopRatingComponent } from './body/movie-list-top-rating/movie-list-top-rating.component';
 import { SignupComponent } from './signup/signup/signup.component';
 import { LoginComponent } from './login/login/login.component';
@@ -7,12 +8,13 @@ import { MovieListComponent } from './body/movie-list-most-popular/movie-list-mo
 
 
 const routes: Routes = [
-  {path: 'login',  component: LoginComponent},
-  {path: 'signup', component: SignupComponent},
-  {path: 'mostRating', component:MovieListTopRatingComponent},
-  {path: 'mostPopularity', component:MovieListComponent},
-  {path:'**',redirectTo:'mostPopularity'},
-  {path:'',component:MovieListComponent},
+  {path: 'login',          component: LoginComponent},
+  {path: 'signup',         component: SignupComponent},
+  {path: 'mostRating',     component: MovieListTopRatingComponent},
+  {path: 'mostPopularity', component: MovieListComponent},
+  {path: 'details/:id',    component: MovieDetailsComponent},
+  {path:'**',              redirectTo:'mostPopularity'},
+  {path:'',                component: MovieListComponent},
 ];
 
 @NgModule({
