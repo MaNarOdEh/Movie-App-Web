@@ -1,6 +1,4 @@
-import { MostPopularityfilmsService } from './films/shared/most-popularityfilms.service';
-import { MostRatingfilmsService } from './films/shared/most-ratingfilms.service';
-import { FilmDetailsService } from './films/shared/film-details.service';
+import { FilmDetailsService } from './films/shared/services/film-details.service';
 import { LoginComponent } from './login/login/login.component';
 import { FooterComponent } from './footer/footer/footer.component';
 import { HeaderComponent } from './header/header/header.component';
@@ -23,6 +21,9 @@ import { SignupComponent } from './signup/signup/signup.component';
 import { FilmCardComponent } from './films/film-card/film-card.component';
 import { MovieListComponent } from './body/movie-list-most-popular/movie-list-most-popular.component';
 import { MovieListTopRatingComponent } from './body/movie-list-top-rating/movie-list-top-rating.component';
+import { MovieDetailsComponent } from './body/movie-details/movie-details.component';
+import { MostRatingfilmsService } from './films/shared/services/most-ratingfilms.service';
+import { MostPopularityfilmsService } from './films/shared/services/most-popularityfilms.service';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { MovieListTopRatingComponent } from './body/movie-list-top-rating/movie-
     SignupComponent,
     FilmCardComponent,
     MovieListComponent,
-    MovieListTopRatingComponent
+    MovieListTopRatingComponent,
+    MovieDetailsComponent
   ],
   imports: [
     BrowserModule,

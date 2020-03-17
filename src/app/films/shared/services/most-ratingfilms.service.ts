@@ -1,4 +1,4 @@
-import { MovieDbInfo } from './models/movie-db-info';
+import { MovieDbInfo } from './../models/movie-db-info';
 import 'rxjs/Rx';
 import {Observable} from 'rxjs';
 import { Injectable } from '@angular/core';

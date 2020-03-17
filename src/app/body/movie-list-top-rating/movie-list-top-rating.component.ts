@@ -1,7 +1,7 @@
-import { MostRatingfilmsService } from './../../films/shared/most-ratingfilms.service';
 import { Observable } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { MostRatingfilmsService } from 'src/app/films/shared/services/most-ratingfilms.service';
 
 @Component({
   selector: 'app-movie-list-top-rating',

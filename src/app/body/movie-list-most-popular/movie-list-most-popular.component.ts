@@ -1,8 +1,7 @@
-import { MostRatingfilmsService } from '../../films/shared/most-ratingfilms.service';
 import { Observable } from 'rxjs';
-import { MostPopularityfilmsService } from '../../films/shared/most-popularityfilms.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { MostPopularityfilmsService } from 'src/app/films/shared/services/most-popularityfilms.service';
 
 @Component({
   selector: 'app-movie-list',
@@ -13,7 +12,7 @@ export class MovieListComponent implements OnInit {
  
   title:string;
   movieList:Observable<any>;
-  constructor(private myrouter:Router,private movieService:MostPopularityfilmsService,private movieService2:MostRatingfilmsService){
+  constructor(private myrouter:Router,private movieService:MostPopularityfilmsService){
     this.title="Most Popularity Movie"
   }
   ngOnInit(): void {
