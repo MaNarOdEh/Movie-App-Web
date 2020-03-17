@@ -22,6 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { SignupComponent } from './signup/signup/signup.component';
 import { FilmCardComponent } from './films/film-card/film-card.component';
 import { MovieListComponent } from './body/movie-list/movie-list.component';
+import { MovieListTopRatingComponent } from './body/movie-list-top-rating/movie-list-top-rating.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { MovieListComponent } from './body/movie-list/movie-list.component';
     LoginComponent,
     SignupComponent,
     FilmCardComponent,
-    MovieListComponent
+    MovieListComponent,
+    MovieListTopRatingComponent
   ],
   imports: [
     BrowserModule,
