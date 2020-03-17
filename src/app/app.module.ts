@@ -1,17 +1,17 @@
+import { LoginComponent } from './login/login/login.component';
+import { FooterComponent } from './footer/footer/footer.component';
+import { HeaderComponent } from './header/header/header.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import {MatIconModule} from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { FilmCardComponent } from './components/film-card/film-card.component';
-import { FilmListComponent } from './components/film-list/film-list.component';
-import { MovieCardComponent } from './components/movies/movie-card/movie-card.component';
-import { MovieListComponent } from './components/movies/movie-list/movie-list.component';
-import { LoginComponent } from './components/login/login/login.component';
-import { LoginFormComponent } from './components/login/login-form/login-form.component';
-import { SignupFormComponent } from './components/signup/signup-form/signup-form.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { FilmComponent } from './films/film/film.component';
 import { SignupComponent } from './signup/signup/signup.component';
 
@@ -20,19 +20,18 @@ import { SignupComponent } from './signup/signup/signup.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    FilmCardComponent,
-    FilmListComponent,
-    MovieCardComponent,
-    MovieListComponent,
     LoginComponent,
-    LoginFormComponent,
-    SignupFormComponent,
     FilmComponent,
     SignupComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
+    BrowserAnimationsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
