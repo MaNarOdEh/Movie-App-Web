@@ -19,8 +19,8 @@ export class MovieListComponent implements OnInit {
   ngOnInit(): void {
     this.movieService.getPopular(10).subscribe(
       res => {
+         console.log(res);
          this.movieList = res.results;
-         console.log(this.movieList);
     });
   }
   naviagteToDetails(movie){
