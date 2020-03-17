@@ -1,13 +1,13 @@
-import { MostRatingfilmsService } from './../../films/shared/most-ratingfilms.service';
+import { MostRatingfilmsService } from '../../films/shared/most-ratingfilms.service';
 import { Observable } from 'rxjs';
-import { MostPopularityfilmsService } from './../../films/shared/most-popularityfilms.service';
+import { MostPopularityfilmsService } from '../../films/shared/most-popularityfilms.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-movie-list',
-  templateUrl: './movie-list.component.html',
-  styleUrls: ['./movie-list.component.css']
+  templateUrl: './movie-list-most-popular.component.html',
+  styleUrls: ['./movie-list-most-popular.component.css']
 })
 export class MovieListComponent implements OnInit {
  
@@ -26,7 +26,5 @@ export class MovieListComponent implements OnInit {
   naviagteToDetails(movie){
     console.log(movie);
   }
-  
-
 
 }

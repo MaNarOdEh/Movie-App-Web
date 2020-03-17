@@ -21,7 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { SignupComponent } from './signup/signup/signup.component';
 import { FilmCardComponent } from './films/film-card/film-card.component';
-import { MovieListComponent } from './body/movie-list/movie-list.component';
+import { MovieListComponent } from './body/movie-list-most-popular/movie-list-most-popular.component';
 import { MovieListTopRatingComponent } from './body/movie-list-top-rating/movie-list-top-rating.component';
 
 @NgModule({

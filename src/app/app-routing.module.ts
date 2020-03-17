@@ -3,7 +3,7 @@ import { SignupComponent } from './signup/signup/signup.component';
 import { LoginComponent } from './login/login/login.component';
 import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { MovieListComponent } from './body/movie-list/movie-list.component';
+import { MovieListComponent } from './body/movie-list-most-popular/movie-list-most-popular.component';
 
 
 const routes: Routes = [
