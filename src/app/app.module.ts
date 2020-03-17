@@ -12,6 +12,8 @@ import { MovieListComponent } from './components/movies/movie-list/movie-list.co
 import { LoginComponent } from './components/login/login/login.component';
 import { LoginFormComponent } from './components/login/login-form/login-form.component';
 import { SignupFormComponent } from './components/signup/signup-form/signup-form.component';
+import { FilmComponent } from './films/film/film.component';
+import { SignupComponent } from './signup/signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { SignupFormComponent } from './components/signup/signup-form/signup-form
     MovieListComponent,
     LoginComponent,
     LoginFormComponent,
-    SignupFormComponent
+    SignupFormComponent,
+    FilmComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
