@@ -1,3 +1,4 @@
+import { TrailerListComponent } from './trailer/trailer-list/trailer-list.component';
 import { TrailerModule } from './trailer/trailer.module';
 import { FilmDetailsService } from './films/shared/services/film-details.service';
 import { LoginComponent } from './login/login/login.component';
@@ -37,7 +38,6 @@ import { MostPopularityfilmsService } from './films/shared/services/most-popular
     MovieListComponent,
     MovieListTopRatingComponent,
     MovieDetailsComponent,
-    TrailerModule,
   ],
   imports: [
     BrowserModule,
@@ -49,6 +49,7 @@ import { MostPopularityfilmsService } from './films/shared/services/most-popular
     BrowserAnimationsModule,
     MatGridListModule,
     HttpClientModule,
+    TrailerModule
   ],
   providers: [
     MostPopularityfilmsService,
