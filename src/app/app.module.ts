@@ -1,3 +1,4 @@
+import { TrailerModule } from './trailer/trailer.module';
 import { FilmDetailsService } from './films/shared/services/film-details.service';
 import { LoginComponent } from './login/login/login.component';
 import { FooterComponent } from './footer/footer/footer.component';
@@ -35,7 +36,8 @@ import { MostPopularityfilmsService } from './films/shared/services/most-popular
     FilmCardComponent,
     MovieListComponent,
     MovieListTopRatingComponent,
-    MovieDetailsComponent
+    MovieDetailsComponent,
+    TrailerModule,
   ],
   imports: [
     BrowserModule,
