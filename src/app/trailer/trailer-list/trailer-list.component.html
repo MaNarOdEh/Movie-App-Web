@@ -1,6 +1,18 @@
-<div *ngFor=" let video of movieTrailer"> 
-    <p>{{video['key']}}</p>
-    <p>{{video['name']}}</p>
-    <p>trailer-list works!</p>
+<div *ngFor=" let video of movieTrailer" class="movie-trailer"> 
+
+    <mat-video title="{{video['name']}}" 
+    [autoplay]="true" 
+    [preload]="false" 
+    color="accent" 
+    spinner="spin" 
+    poster="image.jpg">
+    <source matVideoSource 
+    src="https://www.youtube.com/watch?v={{video['key']}}" 
+    type="video/mp4">
+    </mat-video>
+    <p>{{video['[formGroupName]="name"']}}</p>
+  <a href="https://www.youtube.com/watch?v={{video['key']}}" 
+  target="_blank"
+  >see videos
+</a>
 </div>
-<!--<p>trailer-list works well!!</p>-->
