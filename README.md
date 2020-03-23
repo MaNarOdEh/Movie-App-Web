@@ -1,7 +1,6 @@
 # MovieApp
 
-Fom this website you can see the most popular and most rating movies.
-so you can save your time in searching for a movie to watch.
+From this website you can see the most popular and most rating movies. so you can save your time in searching for a movie to watch.
 
 #### for more information please see the pdf file which have named MovieAppDoc.pdf
 
